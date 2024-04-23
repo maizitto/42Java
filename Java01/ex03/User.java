@@ -16,10 +16,8 @@ public class User {
         if (balance < 0) {
             System.out.println("Negative balance not Allowed (0 Default setted)");
             this.balance = 0;
-        }
-        else {
+        } else
             this.balance = balance;
-        }
         this.id = UserIdsGenerator.getInstance().generateId();
     }
 

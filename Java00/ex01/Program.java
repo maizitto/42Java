@@ -14,15 +14,18 @@ public class Program{
         }
         if (input % 2 == 0)
         {
-            if (input == 2)
+            if (input == 2) {
                 isPrime = true;
-            else
+            }
+            else {
                 isPrime = false;
+            }
         }
         else {
                 for (int x = 3; isPrime && x <= input / x; x += 2) {
-                    if (input % x == 0)
+                    if (input % x == 0){
                         isPrime = false;
+                    }
                     ++operations;
                 }
             }

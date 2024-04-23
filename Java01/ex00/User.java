@@ -5,21 +5,22 @@ public class User {
     private String name;
     private double balance;
 
-    public User(){
+    public User() {
         this.id = 0;
         this.name = "Default";
         this.balance = 0.0;
     }
 
-    public User(String name, double balance){
+    public User(String name, double balance) {
         this.name = name;
-        if (balance < 0){
+        if (balance < 0) {
             System.out.println("Negative balance not Allowed (0 Default setted)");
             this.balance = 0;
         }
-        else
+        else {
             this.balance = balance;
-        this.id = Math.toIntExact((long)(Math.random() * 100000));
+        }
+        this.id = Math.toIntExact((long) (Math.random() * 100000));
     }
 
     public String getName() {
