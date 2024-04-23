@@ -19,7 +19,7 @@ public class User {
         }
         else
             this.balance = balance;
-        this.id = Math.toIntExact((long)(Math.random() * 100000));
+        this.id = UserIdsGenerator.getInstance().generateId();
     }
 
     public String getName() {
